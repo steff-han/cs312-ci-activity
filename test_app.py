@@ -2,7 +2,7 @@ from app import app
 
 
 def test_index():
-    # Flask's built-in test client 
+    # Flask's built-in test client
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
